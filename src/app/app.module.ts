@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { GrowButtonComponent } from './grow-button/grow-button.component';
 import { ChildComponent } from './child/child.component';
+import { HomeBtnComponent } from './home-btn/home-btn.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ChildComponent } from './child/child.component';
     AppComponent,
     HeaderComponent,
     GrowButtonComponent,
-    ChildComponent
+    ChildComponent,
+    HomeBtnComponent
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,13 @@
-<app-header></app-header>
-<p>The app is working</p>
+<app-header [user]="user"></app-header>
+
+<div [ngSwitch]="loggedIn">
+  <p>
+    Logged in:
+    <span *ngSwitchCase="false" class="notRegistered">{{ loggedIn }}</span>
+    <span *ngSwitchCase="true">{{ loggedIn }}</span>
+    <span *ngSwitchDefault>Default case text</span>
+  </p>
+</div>
+
 <app-grow-button></app-grow-button>
-<app-child></app-child>
+<app-child (login)="logIn($event)"></app-child>
